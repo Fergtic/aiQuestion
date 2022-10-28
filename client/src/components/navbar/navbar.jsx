@@ -7,7 +7,7 @@ const Navbar = () => {
     <div className='ai__navbar'>
       <div className='ai__navbar-links'>
         <div className='ai__navbar-links_title'>
-          <h1>aiQuestion</h1>
+          <h1 className='gradient__text' >aiQuestion</h1>
         </div>
       </div>
       <div className='ai__navbar-sign'>

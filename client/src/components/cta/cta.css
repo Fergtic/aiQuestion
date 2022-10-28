@@ -1,0 +1,44 @@
+.ai__cta{
+    border: 1px solid #fff;
+    color: #fff;
+    display: flex;
+
+    justify-content: space-between;
+    padding: 2rem;
+    margin: 4rem;
+    border-radius: 1rem;
+    background: var(--gradient-bar);
+}
+
+ .ai__cta-content p{
+    font-family: var(--font-family);
+    font-weight: 599;
+    font-size: 12px;
+    line-height: 30px;
+    color: #0e0e0e
+
+ }
+
+ .ai__cta-content h3{
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 45px;
+    color: #0e0e0e
+ }
+
+ .ai__cta-button button{
+    background: #0e0e0e;
+    color: #fff;
+    border-radius: 40px;
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0.5rem 1rem;
+
+    border: none;
+    outline: none;
+    cursor: pointer;
+    min-width: 150px;
+ }

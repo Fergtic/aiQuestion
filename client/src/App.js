@@ -21,6 +21,12 @@ import Navbar from "./components/navbar/navbar";
 import './App.css'
 //import { Blog, Features, Footer, Header, Possibility, WhatGPT3 } from "./containers/index.js";
 //import {CTA, Brand, Navbar} from "./components/index.js";
+//<Brand/>
+//<WhatGPT3/>
+//<Features/>
+//<Posibility/>
+//<Blog/>
+//<Footer/>
 
 
 const App = () => {
@@ -29,14 +35,8 @@ const App = () => {
     <div className='gradient__bg'>
      <Navbar />
      <Header/>
+     <CTA/>
     </div>
-    <Brand/>
-    <WhatGPT3/>
-    <Features/>
-    <Posibility/>
-    <CTA/>
-    <Blog/>
-    <Footer/>
    </div>
  );
 };
