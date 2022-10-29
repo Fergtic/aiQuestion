@@ -15,7 +15,7 @@ import Footer from "./containers/footer/footer";
 import Header from "./containers/header/header";
 import  Posibility  from "./containers/possibility/possibility";
 import { WhatGPT3 } from "./containers/whatGPT3/whatGPT3";
-import CTA from "./components/cta/cta";
+import Post from "./components/posts/index";
 import Brand from "./components/brand/brand";
 import Navbar from "./components/navbar/navbar";
 import './App.css'
@@ -35,7 +35,7 @@ const App = () => {
     <div className='gradient__bg'>
      <Navbar />
      <Header/>
-     <CTA/>
+     <Post/>
     </div>
    </div>
  );

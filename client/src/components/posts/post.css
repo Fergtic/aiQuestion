@@ -1,4 +1,4 @@
-.ai__cta{
+.ai__post{
     border: 1px solid #fff;
     color: #fff;
     display: flex;
@@ -10,7 +10,7 @@
     background: var(--gradient-bar);
 }
 
- .ai__cta-content p{
+ .ai__post-content p{
     font-family: var(--font-family);
     font-weight: 599;
     font-size: 12px;
@@ -19,7 +19,7 @@
 
  }
 
- .ai__cta-content h3{
+ .ai__post-content h3{
     font-family: var(--font-family);
     font-weight: 800;
     font-size: 24px;
@@ -27,7 +27,7 @@
     color: #0e0e0e
  }
 
- .ai__cta-button button{
+ .ai__post-button button{
     background: #0e0e0e;
     color: #fff;
     border-radius: 40px;
