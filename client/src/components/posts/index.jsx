@@ -14,7 +14,7 @@ export default function Post() {
     return (
       <div>
       {!posts ? (
-        <Skeleton count={4} width={640} height={500} className='mb-5'/>
+        <Skeleton count={4} width={640} height={500}/>
         ) : posts?.length > 0 ?(
           
         posts.map((post) => <PostBody key={post._id} post={post}/>)

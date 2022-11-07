@@ -38,6 +38,27 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
+.gradient__reply{
+
+
+    /* ff 3.6+ */
+    background:-moz-radial-gradient(circle at 100% 3%, rgba(20, 20, 16, 1) 0%, rgba(0, 135, 212, 1) 87%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(circle at 100% 3%, rgba(20, 20, 16, 1) 0%, rgba(0, 135, 212, 1) 87%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(circle at 100% 3%, rgba(20, 20, 16, 1) 0%, rgba(0, 135, 212, 1) 87%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(circle at 100% 3%, rgba(20, 20, 16, 1) 0%, rgba(0, 135, 212, 1) 87%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(circle at 100% 3%, rgba(20, 20, 16, 1) 0%, rgba(0, 135, 212, 1) 87%);
+
+            
+}
+
 .section__padding{
     padding: 4rem 6rem;
 

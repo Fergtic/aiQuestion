@@ -5,10 +5,16 @@
 
     justify-content: space-between;
     padding: 2rem;
-    margin: 4rem;
-    border-radius: 1rem;
+    margin: 0 4rem;
+    
     background: var(--gradient-bar);
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
 }
+
+
+
+
 
  .ai__post-content p{
     font-family: var(--font-family);
@@ -17,6 +23,46 @@
     line-height: 30px;
     color: #0e0e0e
 
+ }
+
+
+ .test{
+   display: flex;
+   flex-direction: column;
+   margin: 4rem;
+ }
+
+ .ai__post-reply{
+   border: 1px solid #fff;
+   color: #fff;
+   display: flex;
+   justify-content: space-between;
+   padding: 1rem;
+   margin: 0 4rem;
+   background:-moz-radial-gradient(circle at 100% 3%, rgba(78, 123, 65, 1) 0%, rgba(0, 135, 212, 1) 87%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(circle at 100% 3%, rgba(78, 123, 65, 1) 0%, rgba(0, 135, 212, 1) 87%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(circle at 100% 3%, rgba(78, 123, 65, 1) 0%, rgba(0, 135, 212, 1) 87%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(circle at 100% 3%, rgba(78, 123, 65, 1) 0%, rgba(0, 135, 212, 1) 87%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(circle at 100% 3%, rgba(78, 123, 65, 1) 0%, rgba(0, 135, 212, 1) 87%);
+
+   border-bottom-right-radius: 1rem;
+   border-bottom-left-radius: 1rem;
+ }
+
+ .ai__post-reply p{
+   font-family: var(--font-family);
+    font-weight: 599;
+    font-size: 12px;
+    line-height: 30px;
+    color: #0e0e0e
  }
 
  .ai__post-content h3{
