@@ -1,9 +1,24 @@
 import React from 'react'
+import Skeleton from 'react-loading-skeleton';
 
-const Reply = () => {
+const Reply = (props) => {
+
+  
   return (
-    <p>Anonymous: This is a completely incorrect way to respond to this question, what do you think you are on a bout</p>
-  )
+  <div>
+      {!props.post.post.replies ? (
+        <p>Reply to this post!</p>
+        ) : props.post.post.replies?.length > 0 ?(
+          
+        <p>Anonymous: {props.post.post.replies[0]}</p>
+      
+      ) : (
+        <p>Reply to this post!</p>
+      )
+
+    }
+      </div>
+    );
 }
 
 export default Reply

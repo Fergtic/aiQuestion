@@ -8,7 +8,6 @@ const Listener = () => {
     useEffect(() => {
       async function getPosts() {
         const response = await fetch(`http://localhost:5000/posts`);
-        console.log("heysd")
         if (!response.ok) {
           const message = `An error occurred: ${response.statusText}`;
           window.alert(message);
@@ -20,7 +19,7 @@ const Listener = () => {
       }
     
       getPosts();
-    
+      console.log(posts)
       return;
     }, [posts.length]);
 
