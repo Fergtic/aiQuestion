@@ -20,8 +20,7 @@ const PostBar = () => {
     
       // When a post request is sent to the create url, we'll add a new record to the database.
       const newPost = { ...post };
-      console.log(newPost);
-      console.log("^");
+      
     
       await fetch("http://localhost:5000/posts/add", {
         method: "POST",

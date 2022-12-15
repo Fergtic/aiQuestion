@@ -8,12 +8,13 @@ import { useState } from 'react'
 
 const PostBody = (props) => {
   const [buttonPopup, setButtonPopup] = useState(false);
-  const [reply, setReply] = useState('');
+  const [reply, setReply] = useState({
+    replyContent: "",
+  });
 
-  console.log(reply);
   return (
     <div>
-      <div className='test'>
+      <div className='main-body'>
 
         <div className='ai__post'>
         <div className='ai__post-content'>
@@ -29,7 +30,7 @@ const PostBody = (props) => {
         <div className='ai__post-reply'>
         <Reply key={props.post._id} post={props} />
         </div>
-        <PopUp key={props.post._id} post={props} trigger={buttonPopup} setTrigger={setButtonPopup} setReply={setReply}>
+        <PopUp key={props.post._id} post={props} trigger={buttonPopup} setTrigger={setButtonPopup} setReply={setReply} reply={reply}>
           <p> this is the popup </p>
         </PopUp>
       </div>

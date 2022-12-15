@@ -22,6 +22,21 @@ recordRoutes.route("/posts").get(function (req, res) {
 
 
 
+// Get a single record by id
+recordRoutes.route("/posts/:id").get(function (req, res) {
+ let db_connect = dbo.getDb("posts");
+ console.log(req.params.id)
+ console.log("called")
+ let myquery = { _id: ObjectId(req.params.id) };
+ db_connect
+   .collection("records")
+   .findOne(myquery, function (err, result) {
+     if (err) throw err;
+     res.json(result);
+   });
+});
+
+
 
 
 //// Get a single record by id
@@ -39,6 +54,7 @@ recordRoutes.route("/posts").get(function (req, res) {
 // Create a new record.
 recordRoutes.route("/posts/add").post(function (req, response) {
  let db_connect = dbo.getDb("posts");
+ console.log("hello there")
  let myobj = {
    postContent: req.body.postContent,
    replies: []
@@ -65,14 +81,12 @@ recordRoutes.route("/posts/add").post(function (req, response) {
  
 // Update a record by id.
 recordRoutes.route("/comments/:id").post(function (req, response) {
- let db_connect = dbo.getDb();
+  console.log("hello")
+  console.log(req.body)
+ let db_connect = dbo.getDb("posts");
  let myquery = { _id: ObjectId(req.params.id) };
  let newvalues = {
-   $set: {
-     name: req.body.name,
-     position: req.body.position,
-     level: req.body.level,
-   },
+   $push: { replies: req.body.replyContent },
  };
  db_connect
    .collection("records")

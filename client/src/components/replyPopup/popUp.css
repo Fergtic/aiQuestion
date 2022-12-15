@@ -21,9 +21,52 @@
 
 }
 
+.pop__inner-input{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: 14px;
+    border-radius: 4px;
+    outline: none;
+    box-sizing: border-box;
+}
 
-.popup__inner_close-btn{
-    position: absolute;
-    top: 16px;
-    right : 16px;
+
+.pop__inner_btns{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+.close-btn{
+    background: #0e0e0e;
+    color: #fff;
+    border-radius: 40px;
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0.5rem 1rem;
+
+    border: none;
+    outline: none;
+    cursor: pointer;
+    min-width: 150px;
+}
+
+.post-btn{
+    background: #0e0e0e;
+    color: #fff;
+    border-radius: 40px;
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0.5rem 1rem;
+
+    border: none;
+    outline: none;
+    cursor: pointer;
+    min-width: 150px;
 }
