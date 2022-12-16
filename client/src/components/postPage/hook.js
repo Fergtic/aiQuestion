@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
 
-const Listener = (props) => {
+async function Listener(props){
     const [posts, setPosts] = useState([]);
     console.log('yo')
     useEffect(() => {
@@ -16,12 +16,11 @@ const Listener = (props) => {
         const posts = await response.json();
         setPosts(posts);
       }
-    
+      console.log(posts, "inm async")
       getPosts();
-      console.log(posts)
       return;
     }, [posts.length]);
-
+    console.log(posts, "sdsfjldsjfk")
     return(
         posts
     )

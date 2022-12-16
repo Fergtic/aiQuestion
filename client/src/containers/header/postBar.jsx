@@ -1,11 +1,13 @@
 import React from 'react'
 import { useState } from 'react';
 import { useNavigate } from "react-router";
+import PopUp from './popUp';
 
 const PostBar = () => {
   const [post, setPost] = useState({
       postContent: "",
     });
+  const [buttonPopup, setButtonPopup] = useState(false);
 
     // These methods will update the state properties.
     function updateForm(value) {
@@ -38,13 +40,17 @@ const PostBar = () => {
       window.location.reload(false);
     }
   return (
-    <form onSubmit={onSubmit}>
+    <div>
+
     <div className='ai__header-content__input'>
-          <input type='text' placeholder='Post your response here' value={post.postContent} onChange={(e) => updateForm({ postContent: e.target.value })}/>
-              <button type='submit'> Post </button>
+    
+        <button type='button' onClick={() => setButtonPopup(true)}> Post your response </button>
+    </div>
+    <PopUp updateForm={updateForm} setPost={setPost} post={post} trigger={buttonPopup} setTrigger={setButtonPopup} submit={onSubmit}>
+    <p> this is the popup </p>
+    </PopUp>
     </div>
 
-    </form>
     
       
   )

@@ -6,11 +6,11 @@ const Reply = (props) => {
   
   return (
   <div>
-      {!props.post.replies ? (
+      {!props.post.post.replies ? (
         <p>Reply to this post!</p>
-        ) : props.post.replies?.length > 0 ?(
+        ) : props.post.post.replies?.length > 0 ?(
           
-        <p>Anonymous: {props.post.replies[0]}</p>
+        <p>Anonymous: {props.post.post.replies[0]}</p>
       
       ) : (
         <p>Reply to this post!</p>
