@@ -3,6 +3,7 @@
 }
 
 .ai__header-content{
+    padding-top: 35px;
     flex: 2;
     display: flex;
     justify-content: center;

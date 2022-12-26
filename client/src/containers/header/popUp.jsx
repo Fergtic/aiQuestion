@@ -30,7 +30,7 @@ function PopUp(props) {
     <div className='popup__inner'>
       <div className='textArea'>
 
-      <textarea class='ai__header-content__inputField' rows='7' data-min-rows='7' placeholder='Auto-Expanding Textarea' autofocus value={props.post.postContent} onChange={(e) => props.updateForm({ postContent: e.target.value })}></textarea>
+      <textarea class='ai__header-content__inputField' rows='7' data-min-rows='7' placeholder='Enter your reply here' autofocus value={props.post.postContent} onChange={(e) => props.updateForm({ postContent: e.target.value })}></textarea>
       </div>
     
     <div className='pop__inner_btns'>

@@ -2,8 +2,43 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    background: transparent;
+    padding: 15px;
+    transition-timing-function: ease-in;
+    transition: 1s;
+    height: 60px;
+}
 
-    padding: 2rem 6rem;
+#movetxt {
+    position: relative;
+    -webkit-animation: moving 5s ;
+    animation: moving 5s ;
+}
+@keyframes moving {
+    from {transform: translateX(0px);}
+    to {transform: translateX(780px);}
+}
+
+.ai__navbar.active{
+    background:-moz-radial-gradient(circle at 8% 0%, rgba(32, 6, 107, 1) 0%, rgba(0, 0, 0, 1) 57%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(circle at 8% 0%, rgba(32, 6, 107, 1) 0%, rgba(0, 0, 0, 1) 57%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(circle at 8% 0%, rgba(32, 6, 107, 1) 0%, rgba(0, 0, 0, 1) 57%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(circle at 8% 0%, rgba(32, 6, 107, 1) 0%, rgba(0, 0, 0, 1) 57%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(circle at 8% 0%, rgba(32, 6, 107, 1) 0%, rgba(0, 0, 0, 1) 57%);
+    border-width: 0.5;
+    border-color: #fff;
+    
+    
 }
 
 .ai__navbar-links{
@@ -16,6 +51,13 @@
 .ai__navbar-links_title{
     margin-right: 2rem;
 }
+.ai__navbar-links_title.active{
+-webkit-animation: moving 5s ;
+animation: moving 5s ;
+animation-fill-mode: forwards;
+}
+
+
 
 .ai__navbar-links_title h1{
     font-family: var(--font-family);
