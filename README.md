@@ -7,10 +7,10 @@ Preview gifs below
 
 Quick and immediate posting for quick user interaction:
 
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/29729978/208147482-bf69aa2b-bf6c-46d4-8700-788ce2cc53ee.gif)
+![post](https://user-images.githubusercontent.com/29729978/209579588-da258709-e92e-47fc-8e62-e6bd9f32c33c.gif)
 
 Replies:
 
-![ezgif com-gif-maker(1)](https://user-images.githubusercontent.com/29729978/208147476-37eb27fe-76e0-4cc2-84c0-a504be023f7c.gif)
+![reply](https://user-images.githubusercontent.com/29729978/209579589-8524a137-3767-4619-b271-79f66dd7a914.gif)
 
 (!NOTE! aiQuestion is still early in development and design changes happen frequently, these gifs do not reflect the final product)
