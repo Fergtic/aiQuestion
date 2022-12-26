@@ -6,6 +6,7 @@ import Dashboard from "./pages/dashboard";
 import { Test } from "./pages/testSwitch";
 import PostPage from "./components/postPage/postPage";
 
+
 import './App.css'
 import * as ROUTES from "./constants/routes.js"
 
@@ -17,10 +18,13 @@ import * as ROUTES from "./constants/routes.js"
 
 const App = () => {
  return (
+    
+
     <Routes>
       <Route path={ROUTES.DASHBOARD} element={<Dashboard/>}/>
       <Route path={ROUTES.POST} element={<PostPage/>}/>
     </Routes>
+    
  );
 };
  

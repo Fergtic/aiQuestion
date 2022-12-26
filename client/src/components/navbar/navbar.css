@@ -13,12 +13,17 @@
 
 #movetxt {
     position: relative;
-    -webkit-animation: moving 5s ;
-    animation: moving 5s ;
+    -webkit-animation: movingForward 5s ;
+    animation: movingForward 5s ;
 }
-@keyframes moving {
+@keyframes movingForward {
     from {transform: translateX(0px);}
     to {transform: translateX(780px);}
+}
+
+@keyframes movingBack {
+    from {transform: translateX(780px);}
+    to {transform: translateX(0px);}
 }
 
 .ai__navbar.active{
@@ -50,11 +55,11 @@
 
 .ai__navbar-links_title{
     margin-right: 2rem;
+    transition: transform 1s;
+    transform: translateX(0px);
 }
 .ai__navbar-links_title.active{
--webkit-animation: moving 5s ;
-animation: moving 5s ;
-animation-fill-mode: forwards;
+    transform: translateX(780px);
 }
 
 
